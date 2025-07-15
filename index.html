@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skema Kerja Layanan PaaS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🏗️ Platform as a Service (PaaS)</h1>
+        <p>Skema Kerja dan Arsitektur Layanan</p>
+      </div>
+
+      <div class="diagram-container">
+        <!-- Layer 1: User/Developer -->
+        <div class="layer user-layer">
+          <h2>👨‍💻 Layer Developer/User</h2>
+          <div class="components">
+            <div class="component">
+              <h3>🔧 Development Tools</h3>
+              <p>IDE, Code Editor, Version Control</p>
+            </div>
+            <div class="component">
+              <h3>📱 Applications</h3>
+              <p>Web Apps, Mobile Apps, APIs</p>
+            </div>
+            <div class="component">
+              <h3>🎯 Business Logic</h3>
+              <p>Core functionality dan fitur aplikasi</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrow">⬇️</div>
+
+        <!-- Layer 2: PaaS Platform -->
+        <div class="layer paas-layer">
+          <h2>🚀 Layer PaaS Platform</h2>
+          <div class="components">
+            <div class="component">
+              <h3>🏃‍♂️ Runtime Environment</h3>
+              <p>Java, Python, Node.js, .NET, PHP</p>
+            </div>
+            <div class="component">
+              <h3>🗄️ Database Services</h3>
+              <p>MySQL, PostgreSQL, MongoDB, Redis</p>
+            </div>
+            <div class="component">
+              <h3>🔄 Middleware</h3>
+              <p>Message Queue, Cache, Load Balancer</p>
+            </div>
+            <div class="component">
+              <h3>🛠️ Development Tools</h3>
+              <p>CI/CD, Testing, Monitoring, Logging</p>
+            </div>
+            <div class="component">
+              <h3>🌐 Web Services</h3>
+              <p>HTTP Server, API Gateway, SSL/TLS</p>
+            </div>
+            <div class="component">
+              <h3>📊 Management Console</h3>
+              <p>Dashboard, Configuration, Scaling</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrow">⬇️</div>
+
+        <!-- Layer 3: Infrastructure -->
+        <div class="layer infrastructure-layer">
+          <h2>🏗️ Layer Infrastructure (IaaS)</h2>
+          <div class="components">
+            <div class="component">
+              <h3>💻 Compute Resources</h3>
+              <p>Virtual Machines, Containers, CPU</p>
+            </div>
+            <div class="component">
+              <h3>💾 Storage</h3>
+              <p>Block Storage, Object Storage, File System</p>
+            </div>
+            <div class="component">
+              <h3>🌐 Networking</h3>
+              <p>Load Balancers, VPN, Firewall, CDN</p>
+            </div>
+            <div class="component">
+              <h3>🔐 Security</h3>
+              <p>Identity Management, Encryption, Backup</p>
+            </div>
+            <div class="component">
+              <h3>🖥️ Operating System</h3>
+              <p>Linux, Windows, Container Orchestration</p>
+            </div>
+            <div class="component">
+              <h3>📡 Hardware</h3>
+              <p>Physical servers, Data centers, Network</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-description">
+          <h3>🔄 Alur Kerja PaaS</h3>
+          <ul class="flow-steps">
+            <li>
+              <strong>Developer menulis kode</strong> aplikasi menggunakan
+              bahasa pemrograman yang didukung
+            </li>
+            <li>
+              <strong>Deploy ke platform PaaS</strong> melalui git push, web
+              interface, atau CLI tools
+            </li>
+            <li>
+              <strong>Platform otomatis mendeteksi</strong> jenis aplikasi dan
+              dependencies yang diperlukan
+            </li>
+            <li>
+              <strong>Build dan compile</strong> kode secara otomatis dengan
+              runtime environment yang sesuai
+            </li>
+            <li>
+              <strong>Provisioning resources</strong> seperti database, cache,
+              dan storage secara otomatis
+            </li>
+            <li>
+              <strong>Deploy aplikasi</strong> ke server dengan konfigurasi load
+              balancer dan scaling
+            </li>
+            <li>
+              <strong>Monitoring dan maintenance</strong> dilakukan secara
+              otomatis oleh platform
+            </li>
+            <li>
+              <strong>Developer fokus pada pengembangan</strong> fitur tanpa
+              mengelola infrastruktur
+            </li>
+          </ul>
+        </div>
+
+        <div class="benefits">
+          <div class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h4>Deployment Cepat</h4>
+            <p>Deploy aplikasi dalam hitungan menit, bukan jam atau hari</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">📈</div>
+            <h4>Auto Scaling</h4>
+            <p>Otomatis menyesuaikan kapasitas berdasarkan traffic</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💰</div>
+            <h4>Cost Effective</h4>
+            <p>Bayar sesuai penggunaan, tidak perlu investasi hardware</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🔧</div>
+            <h4>Managed Services</h4>
+            <p>Platform mengelola infrastruktur, OS, dan middleware</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
